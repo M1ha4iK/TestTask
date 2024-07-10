@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>GUSAROV</title>
 </head>
 <body>
-    <header class="header__services">
+    <header class="header">
         <div class="header__top">
             <div class="header__left">
                 <div class="header__left-title">
@@ -49,20 +50,17 @@
                 </div>
                 <div class="header__right-soc">
                     <a target="_blank" rel="nofollow" href="https://telegram.me/GUSAROVGROUP">
-                        <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.28737 7.036L17.4854 0.790598C18.2372 0.518997 18.8938 0.973998 18.6502 2.1108L18.6516 2.1094L15.8936 15.1028C15.6892 16.024 15.1418 16.248 14.376 15.814L10.176 12.7186L8.15018 14.6702C7.92618 14.8942 7.73717 15.0832 7.30317 15.0832L7.60138 10.809L15.3854 3.7768C15.7242 3.4786 15.3098 3.3106 14.8632 3.6074L5.24378 9.6638L1.09698 8.3702C0.196775 8.0846 0.177175 7.47 1.28737 7.036Z"></path>
-                         </svg>
+                        <img src="../content/header/telegram.png" alt="">
                     </a>
                     <a target="_blank" rel="nofollow" href="https://wa.me/375445022791">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 0C4.475 0 0 4.475 0 10C0 12.2 0.7 14.225 1.9 15.875L0.525 19.5L4.5 18.35C6.075 19.4 7.975 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM15.325 14.15L14.25 15.2C13.125 16.325 10.15 15.1 7.525 12.45C4.9 9.825 3.725 6.85 4.775 5.75L5.85 4.675C6.25 4.275 6.925 4.275 7.35 4.675L8.925 6.25C9.475 6.8 9.25 7.75 8.525 7.975C8.025 8.15 7.675 8.7 7.85 9.2C8.125 10.375 9.65 11.825 10.775 12.1C11.275 12.225 11.85 11.925 12 11.425C12.225 10.7 13.175 10.475 13.725 11.025L15.3 12.6C15.7 13.025 15.7 13.7 15.325 14.15Z"></path>
-                         </svg>
+                        <img src="../content/header/viber.png" alt="">
                     </a>
                     <a target="_blank" rel="nofollow" href="viber://chat?number=375445023658/">
-                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.3334 0H7.33337C3.48337 0 0.333374 3.14869 0.333374 6.99708V9.99584C0.333374 12.6947 1.90837 15.1687 4.33337 16.3182V19.6668C4.33337 19.9667 4.70837 20.1166 4.90837 19.8917L7.80837 16.9929H11.3334C15.1834 16.9929 18.3334 13.8442 18.3334 9.99584V6.99708C18.3334 3.14869 15.1834 0 11.3334 0ZM13.9584 13.1195L12.9334 14.1191C11.8584 15.1687 9.08337 13.9692 6.63337 11.4702C4.18337 8.97126 3.10837 6.17243 4.13337 5.12287L5.13337 4.12328C5.50837 3.74844 6.13337 3.77343 6.55837 4.14827L8.00837 5.64765C8.53337 6.17243 8.30837 7.07205 7.63337 7.27197C7.15837 7.42191 6.83337 7.94669 6.98337 8.42149C7.23337 9.52103 8.63337 10.9205 9.68337 11.1953C10.1584 11.2953 10.6834 11.0454 10.8584 10.5706C11.0834 9.89588 11.9834 9.69596 12.4834 10.2207L13.9334 11.7201C14.3334 12.07 14.3334 12.6947 13.9584 13.1195ZM10.2334 4.74802C10.1334 4.74802 10.0334 4.74802 9.93337 4.77301C9.75837 4.798 9.58337 4.64806 9.55837 4.47314C9.53337 4.29821 9.68337 4.12328 9.85837 4.09829C9.98337 4.0733 10.1084 4.0733 10.2334 4.0733C12.0584 4.0733 13.5584 5.57268 13.5584 7.39692C13.5584 7.52187 13.5584 7.64681 13.5334 7.77176C13.5084 7.94669 13.3334 8.09663 13.1584 8.07164C12.9834 8.04665 12.8334 7.87172 12.8584 7.69679C12.8584 7.59683 12.8834 7.49688 12.8834 7.39692C12.9084 5.94752 11.7084 4.74802 10.2334 4.74802ZM12.2334 7.42191C12.2334 7.59684 12.0834 7.74677 11.9084 7.74677C11.7334 7.74677 11.5834 7.59684 11.5834 7.42191C11.5834 6.69721 10.9834 6.09746 10.2584 6.09746C10.0834 6.09746 9.93337 5.94752 9.93337 5.77259C9.93337 5.59767 10.0834 5.44773 10.2584 5.44773C11.3334 5.42274 12.2334 6.32237 12.2334 7.42191ZM14.7834 8.49646C14.7334 8.67139 14.5584 8.79634 14.3584 8.74636C14.1834 8.69638 14.0834 8.52145 14.1334 8.34652C14.2084 8.04665 14.2334 7.74677 14.2334 7.42191C14.2334 5.22282 12.4334 3.42357 10.2334 3.42357C10.1334 3.42357 10.0334 3.42357 9.93337 3.42357C9.75837 3.42357 9.58337 3.29863 9.58337 3.1237C9.58337 2.94877 9.70837 2.77384 9.88337 2.77384C10.0084 2.77384 10.1334 2.74885 10.2334 2.74885C12.8084 2.74885 14.9084 4.84798 14.9084 7.42191C14.9084 7.77176 14.8584 8.14661 14.7834 8.49646Z"></path>
-                         </svg>
+                        <img src="../content/header/whatsapp.png" alt="">
                     </a>
+                </div>
+                <div class="header__right-burger">
+                    <img src="../content/header/burgermenu.png" alt="">
                 </div>
             </div>
             
@@ -81,8 +79,110 @@
             </ul>
         </div>
         <div class="header__title">
+            <div class="header__title-text">
+                <h1>Ошибка 401 Unauthorized: что это за ошибка, диагностика и как ее исправить</h1>
+            </div>
+            <div class="header__title-author">
+                <div class="title__author-photo">
 
+                </div>
+                <div class="title__author-name">
+                    
+                </div>
+                <div class="title__author-text">
+                    
+                </div>
+            </div>
+            <div class="header__title-info">
+                <div class="title__info-dates">
+                    <span>Опубликовано: 24 июля 2023</span>
+                    <span>Обновлено: 25 апреля 2024</span>
+                </div>
+                <div class="title__info-stats">
+                    <img src="../content/header/info.png" alt="">
+                </div>
+                <div class="title__info-tags">
+                    <a href="" class="info-tags-links">
+                        <div class="info-tags-button">сеть</div>
+                    </a>
+                    <a href="" class="info-tags-links">
+                        <div class="info-tags-button">инструменты</div>
+                    </a>
+                    <a href="" class="info-tags-links">
+                        <div class="info-tags-button">ликбез</div>
+                    </a>
+                    <a href="" class="info-tags-links">
+                        <div class="info-tags-button">интернет</div>
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
+    <main class="main">
+        <div class="main__left">
+            <div class="breadcrumbs">
+                <a href="" class="breadcrumbs-links">
+                    <span>Главная</span>
+                </a>
+                <span> / </span>
+                <a href="" class="breadcrumbs-links">
+                    <span>О нас</span>
+                </a>
+                <span> / </span>
+                <a href="" class="breadcrumbs-links">
+                    <span>Блог</span>
+                </a>
+                <span> / </span>
+                <a href="" class="breadcrumbs-links">
+                    <span>Ошибка 401 Unauthorized: что это за ошибка, диагностика и как ее исправить</span>
+                </a>
+            </div>
+            <div class="main__text1">
+                <span>Частые причины ошибки 401 — это неверные данные, неправильные настройки, блокировки доступа, однако, это лишь часть причин. Далее мы подробно рассмотрим эти и другие причины возникновения ошибки, а также дадим практические способы устранения на стороне пользователя и администратора ресурса.</span>
+            </div>
+            <div class="main__text2-title">
+                <span>Что такое ошибка 401</span>
+            </div>
+            <div class="main__text2">
+                <span>Код ошибки 401 Unauthorized (от англ. «отказ в доступе») — это сообщение, которое появляется на экране, когда пользователь не может получить доступ к определенному сайту целиком или только к какой-либо странице сайта. Допустим, он неправильно вводит имя и пароль — сразу появится соответствующее сообщение. 401-я, как правило, отображается в браузере как отдельная страница с описанием. Технически ее причина — отсутствие или недостаток данных для входа, чтобы получить доступ к нужному ресурсу.</span>
+            </div>
+        </div>
+
+        <div class="main__right">
+            <div class="main__right-content">
+                <span>Содержание</span>
+                <ul class="right__content-list">
+                    <li class="right__content-links">
+                        <a href="right__content-link">Что такое ошибка 401</a>
+                    </li>
+                    <li class="right__content-links">
+                        <a href="right__content-link">Причины ее появления</a>
+                    </li>
+                    <li class="right__content-links">
+                        <a href="right__content-link">Как ее исправить пользователю</a>
+                    </li>
+                    <li class="right__content-links">
+                        <a href="right__content-link">Как ее исправить вебмастеру</a>
+                    </li>
+                    <li class="right__content-links">
+                        <a href="right__content-link">Примеры текстов 401-й</a>
+                    </li>
+                    <li class="right__content-links">
+                        <a href="right__content-link">Коротко о главном</a>
+                    </li>
+                    <li class="right__content-links">
+                        <a href="right__content-link">Популярные вопросы</a>
+                    </li>
+                    <li class="right__content-links">
+                        <a href="right__content-link">Список использованных источников</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main__right-contactus">
+                <img src="content/main/up.png" alt="">
+                <img src="content/main/contactus.png" alt="">
+            </div>
+        </div>
+    </main>
 </body>
 </html>
