@@ -1,12 +1,12 @@
 @font-face {
     font-family: "TTFirs-Black"; 
-    src: url("../fonts/TTFirs-Black.ttf") format("truetype"); 
+    src: url("./fonts/TTFirs-Black.ttf") format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
 } 
 @font-face {
     font-family: "RadiateSans-BoldSemiExpanded"; 
-    src: url("../fonts/radiate-sans-semi-bold-semi-expanded.ttf") format("truetype"); 
+    src: url("./fonts/radiate-sans-semi-bold-semi-expanded.ttf") format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
 } 
@@ -34,7 +34,7 @@ h1 {
 /*HEADEAR*/
 
 .header {
-    background: url('/content/header/bg.png') left no-repeat;
+    background: url('./content/header/bg.png') left no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
