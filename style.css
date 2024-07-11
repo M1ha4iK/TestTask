@@ -1,106 +1,247 @@
+@font-face {
+    font-family: "TTFirs-Black"; 
+    src: url("../fonts/TTFirs-Black.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+
 body{
     margin: 0;
 }
-
+a{
+    text-decoration: none
+}
+ul{
+    list-style-type: none;
+    padding-inline-start: 0px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+h1 {
+    font-size: 0em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 /*HEADEAR*/
 
 .header {
     background: url('/content/header/bg.png') left no-repeat;
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header a{
+    color: white;
 }
 .header__top {
+    display: flex;
+    justify-content: space-between;
+    height: 74px;
+    align-items: center;
     
 }
 .header__left {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 85px 0px 0px;
 }
 .header__left-title {
 
 }
+.header__left-title a{
+    font-family: TTFirs-Black;
+    font-size: calc(25px + (41 - 30) * ((100vw - 375px) / (1920 - 375)));
+    line-height: 42.19px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
 .header__left-decor {
-
+    width: 50px;
+    height: 2px;
+    border-top: 2px solid #ffffff;  
+    margin: 2px 10px 0px 20px;
 }
 .header__left-list {
 
 }
 .header__menu-list {
-
+    display: flex;
 }
 .header__menu-item {
+    margin: 0px 17px 0px 12px;
+}
+.header__menu-item a{
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.62px;
+    text-align: left;
 
 }
 .header__right {
-    
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px 85px;
 }
+.header__right a{
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.62px;
+    text-align: left;
+}
+
 .header__right-lang {
 
 }
 .header__right-currency {
-
+    display: flex;
+    align-items: center;
+    margin: 0px 49px 0px 36px;
+}
+.header__right-currency img{
+    margin-right: 10px;
+}
+.header__right-currency a {
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.62px;
+    text-align: left;
 }
 .currency-img {
 
 }
 .header__right-button {
-
+    padding: 11px 20px 10px 20px;
+    gap: 10px;
+    background: #FFCF5C;    
+    color: black;
 }
 .header__right-number-full {
-
+    margin: 0px 15px 0px 15px;
+}
+.header__right-number-full a{
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.62px;
+    text-align: left;
 }
 .header__right-number {
 
 }
-.header__right-soc {
-
+.header__right-soc a{
+    padding: 0px 8px 0px 0px;
 }
 .header__right-burger {
-    
+    margin: 0px 0px 0px 15px;
 }
 .header__subheader {
-
+    height: 40px;
 }
 .header__buttom-menu {
-    
+    display: flex;
+    justify-content: center;
 }
 .header__buttom-link {
-
+    padding: 1px 30px 0px 30px;
+}
+.header__buttom-link a{
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.62px;
+    text-align: left;
+    
 }
 .header__title {
-
+    width: 1320px;
+    height: 433px;
+    padding: 45px 0px 55px 0px
 }
 .header__title-text {
-
+    padding: 0px 0px 20px 0px
+}
+.header__title-text h1{
+    font-family: TTFirs-Black;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 67.2px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: white;    
 }
 .header__title-author {
-
+    display: flex;
+    align-items: center;
 }
 .title__author-photo {
-
+    margin: 0px 0px 0px -25px;
+}
+.title__author-info{
+    padding: 0px 0px 0px 5px;
 }
 .title__author-name {
-
+    font-family: TTFirs-Black;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.94px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: white;
+    height: 24px;
+    width: 340px;
+    padding: 8px 0px 7px 0px
 }
 .title__author-text {
-
+    font-family: TTFirs-Black;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.62px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: white;
+    height: 43px;
+    width: 340px;
 }
 .header__title-info {
-
+    padding: 22px 0px 0px 0px;
 }
 .title__info-dates {
-
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.62px;
+    text-align: left;
+    color: white;    
+    padding: 0px 0px 19px 0px;
+}
+.title__info-dates span{
+    margin: 0px 18px 0px 0px;
 }
 .title__info-stats {
-
+    padding: 0px 0px 10px 0px;
 }
 .title__info-tags {
-
+    display: flex;
 }
+
 .info-tags-links {
+    margin: 0px 13px 0px 0px;
 }
 
 .info-tags-button {
-
+    padding: 6px 20px 6px 20px;
+    border-radius: 15px 15px 15px 15px;
+    background: #FFCF5C;   
+    color: black;
 }
 
 /*HEADEAR*/
@@ -110,7 +251,7 @@ body{
 /*MAIN*/
 
 .main {
-
+    display: none;
 }
 .main__left {
 
