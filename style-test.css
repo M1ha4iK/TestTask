@@ -1,0 +1,2966 @@
+@font-face {
+    font-family: "TTFirs-Black"; 
+    src: url("/wp-content/themes/Gusarov_new/new/fonts/TTFirs-Black.woff") format('woff'); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+@font-face {
+    font-family: "RadiateSans-BoldSemiExpanded"; 
+    src: url("/wp-content/themes/Gusarov_new/new/fonts/RadiateSans-Bold.woff") format('woff'); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+@font-face {
+    font-family: 'icons';
+    src: url('/wp-content/themes/Gusarov_new/new/fonts/icons.eot?vkdr8j');
+    src: url('/wp-content/themes/Gusarov_new/new/fonts/icons.eot?vkdr8j#iefix') format('embedded-opentype'),
+       url('/wp-content/themes/Gusarov_new/new/fonts/icons.ttf?vkdr8j') format('truetype'),
+       url('/wp-content/themes/Gusarov_new/new/fonts/icons.woff?vkdr8j') format('woff'),
+       url('/wp-content/themes/Gusarov_new/new/fonts/icons.svg?vkdr8j#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+ }
+ @font-face {
+    font-family: 'TTFirs';
+    src: url('/wp-content/themes/Gusarov_new/new/fonts/TTFirs-Black.woff2') format('woff2'),
+       url('/wp-content/themes/Gusarov_new/new/fonts/TTFirs-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+ }
+ 
+ @font-face {
+    font-family: 'TTFirs-ExtraBold';
+    src: url('/wp-content/themes/Gusarov_new/new/fonts/TT Firs Extrabold.eot');
+    src: local('☺'), url('/wp-content/themes/Gusarov_new/new/fonts/TT Firs Extrabold.woff') format('woff'), url('/wp-content/themes/Gusarov_new/new/fonts/TT Firs Extrabold.ttf') format('truetype'), url('../fonts/TT Firs Extrabold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+ }
+ 
+ @font-face {
+    font-family: 'TTFirs-Bold';
+    src: url('/wp-content/themes/Gusarov_new/new/fonts/TT Firs Bold.eot');
+    src: local('☺'), url('/wp-content/themes/Gusarov_new/new/fonts/TT Firs Bold.woff') format('woff'), url('/wp-content/themes/Gusarov_new/new/fonts/TT Firs Bold.ttf') format('truetype'), url('../fonts/TT Firs Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+ }
+ 
+ 
+ @font-face {
+    font-family: 'Century Gothic';
+    src: url('/wp-content/themes/Gusarov_new/new/fonts/CenturyGothic.woff2') format('woff2'),
+       url('/wp-content/themes/Gusarov_new/new/fonts/CenturyGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+ }
+ 
+ @font-face {
+    font-family: 'Century Gothic';
+    src: url('/wp-content/themes/Gusarov_new/new/fonts/CenturyGothic-Bold.woff2') format('woff2'),
+       url('/wp-content/themes/Gusarov_new/new/fonts/CenturyGothic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+ }
+ 
+ 
+ @font-face {
+    font-family: 'RadiateSans';
+    src: url('/wp-content/themes/Gusarov_new/new/fonts/RadiateSans-Bold.woff2') format('woff2'),
+       url('/wp-content/themes/Gusarov_new/new/fonts/RadiateSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+ }
+
+
+
+
+
+/* * {
+	margin: 0;
+	padding: 0;
+} */
+html,
+body {
+   
+	height: 100%;
+}
+/* .body {
+    display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+} */
+
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none
+}
+ul{
+    list-style-type: none;
+    padding-inline-start: 0px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+h1 {
+    font-size: 0em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.modal {
+    max-width: 914px;
+ 
+    width: 100%;
+    padding: calc(50px + (100 - 50) * ((100vw - 375px) / (1920 - 375))) calc(20px + (60 - 20) * ((100vw - 375px) / (1920 - 375)));
+    text-align: center;
+    background: #F7F5F5;
+    border: 2px solid #FFCF5C;
+    display: none !important;
+ }
+ 
+ body .modal.fancybox__content {
+    display: flex !important;
+ }
+
+ .title-modal {
+    font-family: TTFirs;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFC24B;
+    margin-bottom: 10px;
+ }
+ 
+ .text-modal {
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    color: #393333;
+    margin-bottom: 30px;
+ }
+ 
+ .modal-form {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ 
+ .modal__form {
+    max-width: 400px;
+    width: 100%;
+ }
+
+ .secret-modal.show {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .secret-modal {
+    display: none;
+ 
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.336);
+    top: 0;
+    left: 0;
+    z-index: 100;
+ }
+ 
+ .modal-close {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+ }
+ 
+ .secret-modal>.modal {
+    display: block !important;
+    position: relative;
+    max-height: 100%;
+ }
+ 
+ .secret-modal>.modal .modal__form {
+    margin: 0 auto;
+ }
+ .modal .masked .phone input {
+    padding-left: 55px;
+}
+.modal .masked.big ul {
+    margin-top: 0;
+    z-index: 10;
+    bottom: -81px;
+    left: 0px;
+}
+.modal .masked.big{width: 100%;}
+.s9__form .masked .phone input,
+.s-s11-form .masked .phone input,
+.s-s14-item .masked .phone input,
+.s-s7-form   .masked .phone input {
+    padding-left: 50px;
+}
+
+ .privacy_block {
+display: none;
+position: fixed;
+justify-content: center;
+align-items: center;
+z-index: 9999999;
+bottom: 0;
+left: 0;
+right: 0;
+text-align: center;
+font-size: 15px;
+color: #FFF;
+background: #FFCF5C;
+padding: 10px 20px;
+border-top: 4px solid #d8e8dc;
+}
+/* Оформление кнопок */
+.privacy_block .close{margin-left: 25px;}
+.privacy_btn {
+display: inline-block;
+text-decoration: none;
+position: relative;
+font-size: 13px;
+padding: 4px 12px;
+color: #FFF;
+font-weight: bold;
+text-transform: uppercase;
+background: #337AB7;
+border: 2px solid #BFE2FF;
+}
+.privacy_btn:hover {
+color: #FFF;
+}
+.privacy_btn:after,
+.privacy_btn:before {
+position: absolute;
+height: 2px;
+left: 50%;
+background: #FFF;
+bottom: -6px;
+content: "";
+transition: all 280ms ease-in-out;
+width: 0;
+}
+.privacy_btn:before {
+top: -6px;
+}
+.privacy_btn:hover:after,
+.privacy_btn:hover:before {
+width: 100%;
+left: 0;
+}
+.privacy_block a {color:#fff;text-decoration:underline}
+.privacy_block .close a {text-decoration:none}
+
+/*HEADEAR*/
+
+.header {
+    background: url('/wp-content/themes/Gusarov_new/new/img/bg.png') left no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header a{
+    color: white;
+}
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    height: 74px;
+    align-items: center;
+    
+}
+.header__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 85px 0px 0px;
+}
+.header__left-title {
+
+}
+.header__left-title a{
+    font-family: TTFirs-Black;
+    font-size: calc(25px + (41 - 30) * ((100vw - 375px) / (1920 - 375)));
+    line-height: 42.19px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+.header__left-decor {
+    width: 50px;
+    height: 2px;
+    border-top: 2px solid #ffffff;  
+    margin: 2px 10px 0px 20px;
+}
+.header__left-list {
+
+}
+.header__menu-list {
+    display: flex;
+}
+.header__menu-item {
+    margin: 0px 17px 0px 12px;
+}
+.header__menu-item a{
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.62px;
+    text-align: left;
+
+}
+.header__right {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px 85px;
+}
+.header__right a{
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.62px;
+    text-align: left;
+}
+
+.header__right-lang {
+
+}
+.header__right-currency {
+    display: flex;
+    align-items: center;
+    margin: 0px 49px 0px 36px;
+}
+.header__right-currency img{
+    margin-right: 10px;
+}
+.header__right-currency a {
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.62px;
+    text-align: left;
+}
+.currency-img {
+
+}
+.header__right-button {
+    padding: 11px 20px 10px 20px;
+    gap: 10px;
+    background: #FFCF5C;    
+    color: black;
+}
+.header__right-number-full {
+    margin: 0px 15px 0px 15px;
+}
+.header__right-number-full a{
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.62px;
+    text-align: left;
+}
+.header__right-number {
+
+}
+.header__right-soc a{
+    padding: 0px 8px 0px 0px;
+}
+.header__right-burger {
+    margin: 0px 0px 0px 15px;
+}
+.header__subheader {
+    height: 40px;
+}
+.header__buttom-menu {
+    display: flex;
+    justify-content: center;
+}
+.header__buttom-link {
+    padding: 1px 30px 0px 30px;
+}
+.header__buttom-link a{
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.62px;
+    text-align: left;
+    
+}
+.header__title {
+    width: 1320px;
+    height: 433px;
+    padding: 45px 0px 55px 0px
+}
+.header__title-text {
+    padding: 0px 0px 20px 0px
+}
+.header__title-text h1{
+    font-family: TTFirs-Black;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 67.2px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: white;    
+}
+.header__title-author {
+    display: flex;
+    align-items: center;
+}
+.title__author-photo {
+    margin: 0px 0px 0px -25px;
+}
+.title__author-info{
+    padding: 0px 0px 0px 5px;
+}
+.title__author-name {
+    font-family: TTFirs-Black;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.94px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: white;
+    height: 24px;
+    width: 340px;
+    padding: 8px 0px 7px 0px
+}
+.title__author-text {
+    font-family: TTFirs-Black;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.62px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: white;
+    height: 43px;
+    width: 340px;
+}
+.header__title-info {
+    padding: 22px 0px 0px 0px;
+}
+.title__info-dates {
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.62px;
+    text-align: left;
+    color: white;    
+    padding: 0px 0px 19px 0px;
+}
+.title__info-dates span{
+    margin: 0px 18px 0px 0px;
+}
+.title__info-stats {
+    padding: 0px 0px 10px 0px;
+}
+.title__info-tags {
+    display: flex;
+}
+
+.info-tags-links {
+    margin: 0px 13px 0px 0px;
+}
+
+.info-tags-button {
+    font-family: Century Gothic;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.17px;
+    text-align: left;
+    padding: 6px 20px 6px 20px;
+    border-radius: 15px 15px 15px 15px;
+    background: #FFCF5C;   
+    color: black;
+}
+
+/*HEADEAR*/
+
+
+
+/*MAIN*/
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px 50px 55px;
+}
+.main_container{
+    display: flex;
+}
+.main__left {
+    width: 870px;
+}
+.breadcrumbs {
+    margin: 0px 0px 50px 0px;
+}
+.breadcrumbs a:last-child{
+    font-family: Century Gothic;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.17px;
+    text-align: left;
+    color: #FFCF5C;
+}
+.breadcrumbs-links {
+    font-family: Century Gothic;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.17px;
+    text-align: left;    
+}
+.main__text1 {
+    font-family: Century Gothic;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: black;    
+    margin: 0px 0px 43px 0px;
+}
+.main__text2-title {
+    font-family: RadiateSans-BoldSemiExpanded;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 51.39px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #FFC24B;    
+    margin: 0px 0px 26px 0px;
+}
+.main__text2 {
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;    
+}
+.main__right {
+    display: flex;
+    margin: 0px 0px 0px 37px;
+    
+}
+.main__right-content {
+    width: 420px;
+    height: 380px;
+    border-left: 1px solid #CCCCCC;
+    padding: 26px 26px 26px 4px;
+}
+.main__right-content span{
+    font-family: RadiateSans-BoldSemiExpanded;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+    margin: 0px 0px 0px 20px;
+}
+.right__content-list {
+    margin: 30px 0px 0px 20px;
+    
+}
+.right__content-links {
+    border-left: 5px solid #CCCCCC;
+    margin-bottom: 1.22em;
+    padding: 0px 0px 0px 10px;
+}
+.right__content-links a{
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    color: black;
+}
+.main__right-contactus {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    right: 10px;
+    top: 820px;
+}
+.main__right-contactus img{
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 1555px;
+    padding: 0 20px;
+    margin: 0 auto;
+ }
+ 
+ .main__img-test2{
+    margin: 20px 0px 0px 0px
+ }
+
+.main__text3 {
+    margin: 15px 0px 0px 0px;
+}
+.main__text3 span{
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #646469;
+}
+.main__text4-title {
+    margin: 20px 0px 0px 0px;
+}
+.main__text4-title span{
+    font-family: TTFirs-ExtraBold;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+
+}
+
+.main__text4-list {
+    margin: 15px 0px 0px 0px;
+}
+.main__text4 {
+    border-left: 5px solid #FFC24B;
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;    
+    color: #646469;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px 0px 12px;
+}
+.main_border-text img{
+    
+    
+}
+.main_border-text span{
+    font-family: Century Gothic;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: left;
+    color: #393333;
+    
+}
+.main_border-text {
+    display: flex;
+    border: 1px solid #FFC24B;
+    width: 809px;
+    height: 53px;
+    padding: 20px 30px 20px 30px;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.main__text5-title {
+    width: 650px;
+    height: 102px;
+    margin: 42px 0px 0px 0px;
+}
+.main__text5-title span{
+    font-family: RadiateSans-BoldSemiExpanded;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 51.39px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color:#FFC24B;
+    
+}
+.main__text5 {
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #393333;
+    margin: 27px 0px 0px 0px;
+}
+
+.main__text6-title span{
+    font-family: TTFirs-ExtraBold;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+    
+}
+.main__text6-title {
+    margin: 18px 0px 0px 0px;
+}
+.main__text6-list {
+    margin: 15px 0px 0px 0px;
+}
+.main__text6 {
+    border-left: 5px solid #FFC24B;
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;    
+    color: #646469;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px 0px 12px;
+}
+.main__text7-title span{
+    font-family: TTFirs-ExtraBold;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+    color: #393333;    
+}
+.main__text7-title {
+
+}
+.main__text7-list span{
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #393333;
+
+}
+.main__text7-list {
+    margin: 15px 0px 0px 0px;
+}
+.main__text7 {
+    border-left: 5px solid #FFC24B;
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;    
+    color: #646469;
+    margin: 14px 0px 20px 0px;
+    padding: 0px 0px 0px 12px;
+}
+.main__article {
+    display: flex;
+    margin: 52px 0px 0px 0px;
+}
+.article-left {
+    
+}
+.article-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0px 0px 0px 21px;
+}
+
+.article-right a{
+    font-family: Century Gothic;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.07px;
+    text-align: left;
+    color: #393333;
+}
+
+.article-right span{
+    width: 105px;
+    height: 19px;
+    padding: 6px 20px 6px 20px;
+    gap: 10px;
+    border-radius: 40px 40px 40px 40px;
+    background: #FFCF5C;
+    font-family: Century Gothic;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.17px;
+    text-align: left;
+    color: #393333;
+}
+
+.main__text8-title {
+    font-family: RadiateSans-BoldSemiExpanded;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 51.39px;
+    letter-spacing: 0.14em;
+    text-align: left;
+    color: #FFC24B;
+    margin: 38px 0px 0px 0px;
+}
+.main__text8-list {
+    margin: 31px 0px 0px 0px;
+}
+.text8__title {
+    display: flex;
+    align-items: center;
+    margin: 30px 0px 0px 0px;
+}
+.text8__title span{
+    width: 41px;
+    height: 25px;
+    padding: 5px 10px 5px 10px;
+    gap: 10px;
+    background: #FFC24B;
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    text-align: right;
+}
+.text8__list-title {
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    text-align: left;
+    color: #393333;
+    margin: 0px 0px 0px 10px;
+}
+.main__text8 {
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    color: #393333;
+    border-left: 5px solid #FFC24B;
+    margin: 19px 0px 0px 0px;
+    padding: 0px 0px 0px 10px;
+}
+.main__text8-end {
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    color: #646469;    
+    margin: 22px 0px 0px 0px;
+}
+
+.main__table-title{
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    text-align: left;
+    color: #393333;
+    margin: 50px 0px 0px 0px;
+}
+
+.main__table {
+    margin: 20px 0px 0px 0px;
+    width: 870px;
+    height: 455px;
+    border-collapse:collapse;
+}
+.main__table td:nth-child(1){
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    text-align: left;
+    color: #393333;    
+    width: 435px;
+    padding: 0px 0px 0px 22px;
+}
+.main__table td:nth-child(2){
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    color: #393333;
+    width: 435px;
+    padding: 0px 0px 0px 26px;
+}
+
+.main__table td{
+    border: 1px solid  #CCCCCC;
+}
+.main__table tr{
+    border: 1px solid  #CCCCCC;
+}
+.main__table tr:nth-child(1){
+    height: 55px;
+    background-color: #FFCF5C;
+}
+
+.main__self-promotion {
+    display: flex;
+    height: 213px;
+    width: 870px;
+    background-color: #393333;
+    margin: 50px 0px 0px 0px;
+    align-items: center;
+}
+.promotion-left {
+    padding: 0px 0px 0px 30px;
+}
+.promotion-right span{
+    font-family: TTFirs-ExtraBold;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+    color: white;
+}
+.promotion-right {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0px 21px;
+}
+.promotion__right-list {
+    margin: 18px 0px 0px 0px;
+}
+.promotion__text {
+    border-left: 5px solid #FFC24B;
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    color: white;
+    margin: 0px 0px 11px 0px;
+    padding: 0px 0px 0px 10px;
+}
+
+.main__text9-title {
+    margin: 42px 0px 0px 0px;
+}
+.main__text9-title span{
+    font-family: RadiateSans-BoldSemiExpanded;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 51.39px;
+    letter-spacing: 0.15em;
+    text-align: left;
+    color:#FFC24B;
+}
+.main__text9-list {
+    margin: 32px 0px 0px 0px;
+}
+.main__text9 {
+    border-left: 5px solid #FFC24B;
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;    
+    color: #646469;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px 0px 12px;
+}
+
+.main__self-promotion2 {
+    display: flex;
+    height: 256px;
+    width: 870px;
+    background-color: #393333;
+    margin: 50px 0px 0px 0px;
+    align-items: center;
+}
+.promotion2-left {
+    padding: 40px 0px 0px 31px;
+}
+.promotion2-right span{
+    font-family: TTFirs-ExtraBold;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+    color: white;
+}
+.promotion2-right {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0px 36px;
+}
+.promotion2__right-list {
+    margin: 10px 0px 0px 0px;
+}
+.promotion2__text {
+    border-left: 5px solid #FFC24B;
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    color: white;
+    margin: 14px 0px 11px 0px;
+    padding: 0px 0px 0px 10px;
+}
+
+.main__text10-title {
+    margin: 44px 0px 0px 0px;
+}
+.main__text10-title span{
+    font-family: RadiateSans-BoldSemiExpanded;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 51.39px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #FFCF5C;
+}
+.main__questions {
+    margin: 27px 0px 0px 0px;
+}
+.main__question:first-child {
+    height: 137px;
+    padding: 25px;
+    gap: 20px;
+}
+.main__question {
+    width: 821px;
+    height: 30px;
+    padding: 25px;
+    gap: 20px;
+}
+.main__question:not(:first-child) {
+    margin: 0px 0px 0px 0px;
+}
+.main__question-title {
+    display: flex;
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.62px;
+    text-align: left;
+    color: #393333;    
+    justify-content: space-between;
+}
+.question__title {
+
+}
+.main__question-text {
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    color: #646469;    
+    margin: 20px 0px 0px 0px;
+}
+
+
+.main__sources-used {
+    margin: 41px 0px 55px 0px;
+    width: 810px;
+    height: 293px;
+    padding: 24px 30px 30px 30px;
+    gap: 20px;
+    border: 1px solid #CCCCCC;
+}
+.sourced__used-title {
+    font-family: RadiateSans-BoldSemiExpanded;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+    color: #393333;
+    margin: 0px 0px 35px 0px;
+}
+.used__title-link {
+    padding: 0px 0px 28px 0px;
+}
+
+.used__title-link a{
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    color: #646469;
+    text-decoration: underline;
+    margin: 0px 0px 0px 10px;
+}
+.used__title-link span{
+    width: 41px;
+    height: 25px;
+    padding: 5px 10px 5px 28px;
+    gap: 10px;
+    background: #FFC24B;
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23.4px;
+    text-align: right;
+}
+.main__info-stats {
+
+}
+
+
+.main__comments-title {
+    font-family: TTFirs-Black;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 62.51px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #FFC24B;
+    margin: 83px 0px 0px 0px;
+}
+.main__call-comments {
+    font-family: TTFirs-ExtraBold;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+    color: #393333;
+    margin: 33px 0px 0px 0px;
+}
+.main__form {
+    margin: 22px 0px 0px 0px;
+}
+.form__input-name {
+    width: 820px;
+    height: 50px;
+    font-family: Century Gothic;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.17px;
+    text-align: left;
+    color: #393333;
+    padding: 0px 0px 0px 20px;
+    border: 0px;
+}
+.form__input-comment {
+    width: 820px;
+    height: 100px;
+    font-family: Century Gothic;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.17px;
+    text-align: left;
+    color: #393333;
+    padding: 0px 0px 0px 20px;
+    border: 0px;
+}
+.form__button {
+    width: 200px;
+    height: 50px;
+    padding: 10px 60px 10px 60px;
+    background-color: #FFCF5C;
+    font-family: Century Gothic;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.17px;
+    text-align: left;
+    border: 0px;
+    margin: 30px 0px 0px 621px;
+}
+.main__count-comments {
+    font-family: Century Gothic;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.2px;
+    text-align: left;
+    color: #393333;    
+    margin: 61px 0px 0px 0px;
+}
+.main__comment {
+    display: flex;
+    width: 820px;
+    height: 138px;
+    padding: 20px 25px 20px 25px;
+    align-items: center;
+}
+.comment__left {
+
+}
+.comment__right {
+    margin: 0px 0px 0px 21px;
+}
+.comment__name {
+    font-family: TTFirs-ExtraBold;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #393333;
+    margin: 0px 0px 10px 0px;
+}
+.comment__text {
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    color: #393333;
+    width: 650px;
+}
+
+.main__articles-title {
+    font-family: TTFirs-Black;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 62.51px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #FFC24B;
+    margin: 85px 642px 0px 0px;
+}
+.main__articles {
+    display: flex;
+}
+.articles__article {
+    display: flex;
+    flex-direction: column;
+    height: 333px;
+    width: 315px;
+    margin: 35px 20px 0px 0px;
+}
+.articles__info {
+    display: flex;
+    margin: 20px 0px 8px 0px;
+}
+.articles__type {
+    font-family: Century Gothic;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.17px;
+    text-align: left;
+    color: #393333;
+    border-radius: 40px;
+    width: 85px;
+    height: 20px;
+    padding: 5px 0px 4px 0px;
+    background: #FFCF5C;
+    text-align: center;
+}
+
+
+.articles__date {
+    font-family: Century Gothic;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.17px;
+    text-align: left;
+    color:#393333;
+    margin: 5px 0px 0px 10px;
+}
+.articles__name {
+    font-family: Century Gothic;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.07px;
+    text-align: left;
+    color:#393333;    
+}
+.articles__views {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 0px 0px;
+}
+.view__count {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.1px;
+    text-align: left;
+    color:#646469;
+    margin: 0px 0px 0px 10px;
+}
+
+.main__rating {
+    display: flex;
+    width: 1355px;
+    margin: 48px 0px 0px 0px;
+}
+.rating__left {
+    width: 581px;
+    height: 220px;
+}
+.rating-title {
+    font-family: TTFirs-Black;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 62.51px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #FFC24B;
+}
+.rating-text {
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    color: #393333;    
+    margin: 20px 0px 0px 0px;
+}
+.text1 {
+
+}
+.text2 {
+    margin: 8px 0px 0px 0px;
+}
+.rating__right {
+    display: grid;
+    grid-template-columns: 345px 345px;
+    grid-template-rows: 158px 158px 158px;
+    margin: 5px 0px 0px 50px;
+}
+.rating__card {
+    border: 1px solid #CCCCCC;
+    border-collapse: collapse;
+}
+.card__text{
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    color: #393333;    
+    margin: 5px 0px 0px 19px;
+}
+
+.card__up {
+    display: flex;
+}
+.card__up img{
+    width: 125px;
+    height: 30px;
+    margin: 17px 0px 0px 0px;
+}
+.up__title {
+    font-family: Century Gothic;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-align: left;
+    color: #393333;
+    margin: 53px 82px 0px 19px;
+}
+
+.main__about-us {
+    display: flex;
+    margin: 74px 0px 0px 0px;
+    width: 1355px;
+}
+.about__us-left {
+    margin: 0px 30% 0px 0px;
+}
+.about__us-title {
+    font-family: TTFirs-Black;
+    font-size: 46px;
+    line-height: 53.91px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #FFC24B;
+}
+.about__us-title-list {
+    font-family: TTFirs-ExtraBold;
+    font-size: 22px;
+    line-height: 25.78px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #FFC24B;
+    margin: 29px 0px 0px 0px;
+}
+.about__us-list {
+    margin: 20px 0px 0px 0px;
+}
+.about__us-text {
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    color:#393333;
+    margin: 0px 0px 10px 0px;
+}
+.about__us-form {
+    font-family: Century Gothic;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.17px;
+    text-align: left;
+    color: #393333;   
+    display: flex;
+    flex-direction: column; 
+    margin: 45px 0px 0px 0px;
+}
+.about__us-name {
+    width: 300px;
+    height: 50px;
+    border: 2px solid #EEEEEE;
+    font-family: Century Gothic;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.17px;
+    text-align: left;
+    color: #393333;
+    padding: 0px 0px 0px 18px;
+}
+.phone {
+    font-family: Century Gothic;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.17px;
+    text-align: left;
+    color: #393333;
+    width: 300px;
+    height: 50px;
+    border: 2px solid #EEEEEE;
+    padding: 0px 0px 0px 18px;
+    margin: 15px 0px 0px 0px;
+}
+.about__us-button {
+    font-family: Century Gothic;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.17px;
+    text-align: left;
+    background-color: #393333;
+    color: white;  
+    width: 300px;
+    height: 50px;
+    padding: 10px 84px 10px 84px;
+    margin: 20px 0px 0px 0px;
+    border: 0px;
+}
+.about__us-right {
+
+}
+
+
+/*MAIN*/
+
+
+
+
+/* FOOTER */
+
+.footer {
+    padding: calc(50px + (100 - 50) * ((100vw - 375px) / (1920 - 375))) 0;
+    background: #393333;
+ }
+ 
+ .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+ }
+ 
+ .footer__left {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+ 
+ .footer__email {
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: calc(16px + (24 - 16) * ((100vw - 375px) / (1920 - 375)));
+    line-height: calc(20px + (29 - 20) * ((100vw - 375px) / (1920 - 375)));
+    color: #FFFFFF;
+    margin-bottom: calc(12px + (20 - 12) * ((100vw - 375px) / (1920 - 375)));
+ }
+ 
+ .footer__email>span {
+    color: #FFC24B;
+ }
+ 
+ .footer__phone {
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: calc(16px + (24 - 16) * ((100vw - 375px) / (1920 - 375)));
+    line-height: calc(20px + (29 - 20) * ((100vw - 375px) / (1920 - 375)));
+    margin-bottom: calc(12px + (20 - 12) * ((100vw - 375px) / (1920 - 375)));
+    color: #FFFFFF;
+    transition: all .2s ease;
+ }
+ 
+ .footer__phone:hover {
+    color: #FFC24B;
+ }
+ 
+ .footer__address {
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: calc(16px + (24 - 16) * ((100vw - 375px) / (1920 - 375)));
+    line-height: calc(20px + (29 - 20) * ((100vw - 375px) / (1920 - 375)));
+    color: #FFFFFF;
+    margin-bottom: calc(30px + (44 - 30) * ((100vw - 375px) / (1920 - 375)))
+ }
+ 
+ .footer__social {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+ 
+ }
+ 
+ .footer__link {
+    margin: 0 8px;
+    transition: color .2s ease;
+ }
+ 
+ .footer__link>a {
+    color: #fff;
+    transition: color .2s ease;
+ }
+
+
+/* FOOTER */
+
+
+/*АДАПТАЦИЯ ЭКРАНА*/
+
+@media screen and (max-width: 1600px) {
+    .header__top {
+        display: block;
+        height: 85px;
+    }
+    .header__title {
+        width: 1000px;
+        height: 433px;
+        padding: 45px 0px 55px 0px;
+    }
+    .header {
+        height: 720px;
+    }
+}
+@media screen and (max-width: 1450px) {
+    .main__right {
+        display: none;
+    }
+    .main__articles-title {
+        font-family: TTFirs-Black;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 62.51px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #FFC24B;
+        margin: 40px 250px 0px 0px;
+    }
+    .main__articles {
+        display: grid;
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 350px 350px;
+        justify-items: center;
+        align-items: center;
+    }
+    .main__rating {
+        display: flex;
+        width: 760px;
+        margin: 44px 0px 0px 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .rating__right {
+        display: grid;
+        grid-template-columns: 345px 345px;
+        grid-template-rows: 158px 158px 158px;
+        margin: 50px 0px 0px 0px;
+    }
+    .about__us-left {
+        margin: 0px 0% 0px 0px;
+    }
+    .main__about-us {
+        display: flex;
+        margin: 74px 0px 0px 0px;
+        width: 850px;
+    }
+    .about__us-right img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .breadcrumbs-links {
+        font-size: 12px;
+    }
+    .breadcrumbs a:last-child {
+        font-size: 12px;
+    }
+    .breadcrumbs {
+        margin: 0px 0px 30px 0px;
+    }
+    .main__text1 {
+        font-size: 18px;
+        margin: 0px 0px 20px 0px;
+    }
+    .main__text2-title {
+        font-size: 25px;
+        margin: 0px 0px 20px 0px;
+    }
+    .main__text2 {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .header {
+        height: 600px;
+    }
+    .header__title-text h1 {
+        font-size: 35px;
+    }
+    .header__title {
+        width: 770px;
+    }
+    .title__author-name {
+        font-size: 15px;
+    }
+    .title__author-text {
+        font-size: 12px;
+    }
+    .title__info-dates {
+        font-size: 14px;
+    }
+    .title__author-photo img{
+        width: 120px;
+        height: 120px;
+    }
+    .title__info-stats img{
+        width: 400px;
+        height: 30px;
+    }
+    .info-tags-button {
+        padding: 5px 15px 5px 15px;
+    }
+    .breadcrumbs-links {
+        font-size: 11px;
+    }
+    .breadcrumbs a:last-child {
+        font-size: 11px;
+    }
+    .breadcrumbs {
+        margin: 0px 0px 25px 0px;
+    }
+    .main {
+        padding: 40px 55px 50px 55px;
+    }
+    .main__text1 {
+        font-size: 17px;
+        margin: 0px 0px 15px 0px;
+    }
+    .main__text2-title {
+        font-size: 24px;
+        margin: 0px 0px 15px 0px;
+    }
+    .main__text2 {
+        font-size: 17px;
+    }
+    .main__right-content {
+        width: 300px;
+    }
+    .main__right-content span{
+        font-size: 16px;
+        margin: 0px 0px 0px 20px;
+    }
+    .right__content-list {
+        margin: 30px 0px 0px 20px;
+        
+    }
+    .right__content-links {
+        margin-bottom: 1.20em;
+        padding: 0px 0px 0px 10px;
+    }
+    .right__content-links a{
+        font-size: 14px;
+    }
+    
+}
+
+
+@media screen and (max-width: 1000px) {
+    .breadcrumbs-links {
+        font-size: 11px;
+    }
+    .main_container {
+        width: 800px;
+    }
+    .breadcrumbs a:last-child {
+        font-size: 11px;
+    }
+    .breadcrumbs {
+        margin: 0px 0px 25px 0px;
+    }
+    .main__text1 {
+        font-size: 14px;
+        margin: 0px 0px 15px 0px;
+    }
+    .main__text2-title {
+        font-size: 22px;
+        margin: 0px 0px 15px 0px;
+    }
+    .main__text2 {
+        font-size: 14px;
+    }
+    .main__right-content {
+        width: 300px;
+    }
+    .main__right-content span{
+        font-size: 16px;
+        margin: 0px 0px 0px 20px;
+    }
+    .right__content-list {
+        margin: 30px 0px 0px 20px;
+        
+    }
+    .right__content-links {
+        margin-bottom: 1.20em;
+        padding: 0px 0px 0px 10px;
+    }
+    .right__content-links a{
+        font-size: 14px;
+    }
+    .main__img-test2 img{
+        width: 80%;
+        height: auto;
+    }
+    .main__text3 span {
+        font-family: Century Gothic;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #646469;
+    }
+    .main__text4-title span {
+        font-family: TTFirs-ExtraBold;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.2px;
+        text-align: left;
+    }
+    .main__text4 {
+        border-left: 5px solid #FFC24B;
+        font-family: Century Gothic;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: left;
+        color: #646469;
+        margin: 0px 0px 20px 0px;
+        padding: 0px 0px 0px 12px;
+    }
+    .main_border-text {
+        display: flex;
+        border: 1px solid #FFC24B;
+        width: 650px;
+        height: 45px;
+        padding: 10px 20px 10px 20px;
+        gap: 10px;
+        align-items: center;
+    }
+    .main_border-text img{
+        width: 7px;
+        height: auto;
+    }
+    .main__text5-title span {
+        font-family: RadiateSans-BoldSemiExpanded;
+        font-size: 27px;
+        font-weight: 400;
+        line-height: 51.39px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #FFC24B;
+    }
+    .main__text5 {
+        font-family: Century Gothic;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #393333;
+        margin: 27px 0px 0px 0px;
+    }
+    .main__text6-title span {
+        font-family: TTFirs-ExtraBold;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.2px;
+        text-align: left;
+    }
+    .main__text6 {
+        border-left: 5px solid #FFC24B;
+        font-family: Century Gothic;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: left;
+        color: #646469;
+        margin: 0px 0px 20px 0px;
+        padding: 0px 0px 0px 12px;
+    }
+    .main__text7-title span {
+        font-family: TTFirs-ExtraBold;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.2px;
+        text-align: left;
+        color: #393333;
+    }
+    .main__text7-list span {
+        font-family: Century Gothic;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left;
+        color: #393333;
+    }
+    .main__text7 {
+        border-left: 5px solid #FFC24B;
+        font-family: Century Gothic;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: left;
+        color: #646469;
+        margin: 14px 0px 20px 0px;
+        padding: 0px 0px 0px 12px;
+    }
+    .main__article {
+        display: flex;
+        margin: 32px 0px 0px 0px;
+    }
+    .article-left img{
+        width: 140px;
+        height: auto;
+    }
+    .article-right a {
+        font-family: Century Gothic;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22.07px;
+        text-align: left;
+        color: #393333;
+    }
+    .main__text8-title {
+        font-family: RadiateSans-BoldSemiExpanded;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 51.39px;
+        letter-spacing: 0.14em;
+        text-align: left;
+        color: #FFC24B;
+        margin: 25px 0px 0px 0px;
+    }
+    .main__text8-list {
+        font-size: 14px;
+    }
+    .main__table {
+        margin: 20px 0px 0px 0px;
+        width: 650px;
+        height: 455px;
+        border-collapse: collapse;
+    }
+    .main__self-promotion {
+        display: flex;
+        height: 213px;
+        width: 750px;
+        background-color: #393333;
+        margin: 50px 0px 0px 0px;
+        align-items: center;
+    }
+    .main__text9 {
+        border-left: 5px solid #FFC24B;
+        font-family: Century Gothic;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: left;
+        color: #646469;
+        margin: 0px 0px 20px 0px;
+        padding: 0px 0px 0px 12px;
+    }
+    .main__text9-title span {
+        font-family: RadiateSans-BoldSemiExpanded;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 51.39px;
+        letter-spacing: 0.15em;
+        text-align: left;
+        color: #FFC24B;
+    }
+    .main__text9-list {
+        font-size: 14px;
+    }
+    .main__self-promotion2 {
+        display: flex;
+        height: 256px;
+        width: 750px;
+        background-color: #393333;
+        margin: 50px 0px 0px 0px;
+        align-items: center;
+    }
+    .main__text10-title {
+        margin: 25px 0px 0px 0px;
+    }
+    .main__text10-title span {
+        font-family: RadiateSans-BoldSemiExpanded;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 51.39px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #FFCF5C;
+    }
+    .main__questions {
+        margin: 0px 0px 0px 0px;
+    }
+    .main__question {
+        width: 625px;
+        height: 30px;
+        padding: 25px;
+        gap: 20px;
+    }
+    .main__sources-used {
+        margin: 20px 0px 55px 0px;
+        width: 500px;
+        height: 293px;
+        padding: 24px 30px 30px 30px;
+        gap: 20px;
+        border: 1px solid #CCCCCC;
+    }
+    .main__comments-title {
+        font-family: TTFirs-Black;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 62.51px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #FFC24B;
+        margin: 50px 0px 0px 0px;
+    }
+    .main__call-comments {
+        font-family: TTFirs-ExtraBold;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25.2px;
+        text-align: left;
+        color: #393333;
+        margin: 0px 0px 0px 0px;
+    }
+    .form__input-name {
+        width: 400px;
+        height: 40px;
+        font-family: Century Gothic;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17.17px;
+        text-align: left;
+        color: #393333;
+        padding: 0px 0px 0px 20px;
+        border: 0px;
+    }
+    .form__input-comment {
+        width: 400px;
+        height: 70px;
+        font-family: Century Gothic;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17.17px;
+        text-align: left;
+        color: #393333;
+        padding: 0px 0px 0px 20px;
+        border: 0px;
+    }
+    .main__form {
+        display: flex;
+        flex-direction: column;
+    }
+    .form__button {
+        width: 200px;
+        height: 50px;
+        padding: 10px 60px 10px 60px;
+        background-color: #FFCF5C;
+        font-family: Century Gothic;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17.17px;
+        text-align: left;
+        border: 0px;
+        margin: 10px 0px 0px 0px;
+    }
+    .main__count-comments {
+        font-family: Century Gothic;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 25.2px;
+        text-align: left;
+        color: #393333;
+        margin: 31px 0px 0px 0px;
+    }
+    .main__comment {
+        display: flex;
+        width: 500px;
+        height: 138px;
+        padding: 15px 20px 15px 20px;
+        align-items: center;
+    }
+    .comment__text {
+        font-family: Century Gothic;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 19.4px;
+        text-align: left;
+        color: #393333;
+        width: 450px;
+    }
+    
+}
+
+
+@media screen and (max-width: 850px) {
+    .main_container {
+        display: flex;
+        justify-content: center;
+    }
+    .header__top {
+        height: 102px;
+    }
+    .header__title {
+        width: 530px;
+    }
+    .header__title-text h1 {
+        font-size: 25px;
+        line-height: 39.2px;
+    }
+
+    .main__right-content {
+        width: 220px;
+    }
+    .header__right-button {
+        display: none;
+    }
+    .header__left-title a {
+        font-size: 20px;
+    }
+    .header__left-decor {
+        width: 20px;
+    }
+    .header__menu-item a {
+        font-size: 12px;
+    }
+    .header__menu-item {
+        margin: 0px 5px 0px 5px;
+    }
+    .header__right a {
+        font-size: 12px;
+    }
+    .header__right-currency img {
+        width: 15px;
+        height: 15px;
+    }
+    .header__right-currency {
+        margin: 0px 15px 0px 15px;
+    }
+    .header__right-number-full {
+        margin: 0px 10px 0px 10px;
+    }
+    .header__right-soc {
+        display: flex;
+        flex-direction: column;
+    }
+    .header__right-soc a img{
+        width: 16px;
+        height: 14px;
+    }
+    .header__buttom-link {
+        padding: 1px 6px 0px 6px;
+    }
+    .header__buttom-link a {
+        font-size: 13px;
+    }
+    .main__right-contactus img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .main__text3 span {
+        font-family: Century Gothic;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #646469;
+    }
+    .main__text4-title span {
+        font-family: TTFirs-ExtraBold;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25.2px;
+        text-align: left;
+    }
+    .main__text4 {
+        border-left: 5px solid #FFC24B;
+        font-family: Century Gothic;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: left;
+        color: #646469;
+        margin: 0px 0px 20px 0px;
+        padding: 0px 0px 0px 12px;
+    }
+    .main_border-text {
+        display: flex;
+        border: 1px solid #FFC24B;
+        width: 279px;
+        height: 45px;
+        padding: 10px 20px 10px 20px;
+        gap: 10px;
+        align-items: center;
+    }
+    .main__text5-title {
+        width: 390px;
+        height: 50px;
+        margin: 15px 0px 0px 0px;
+    }
+    .main__text5-title span {
+        font-family: RadiateSans-BoldSemiExpanded;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30.39px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #FFC24B;
+    }
+    .main_border-text img{
+        width: 7px;
+        height: auto;
+    }
+
+    .main__text5 {
+        font-family: Century Gothic;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #393333;
+        margin: 27px 0px 0px 0px;
+    }
+    .main__text6-title span {
+        font-family: TTFirs-ExtraBold;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25.2px;
+        text-align: left;
+    }
+    .main__text6 {
+        border-left: 5px solid #FFC24B;
+        font-family: Century Gothic;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: left;
+        color: #646469;
+        margin: 0px 0px 20px 0px;
+        padding: 0px 0px 0px 12px;
+    }
+    .main__text7-title span {
+        font-family: TTFirs-ExtraBold;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25.2px;
+        text-align: left;
+        color: #393333;
+    }
+    .main__text7-list span {
+        font-family: Century Gothic;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left;
+        color: #393333;
+    }
+    .main__text7 {
+        border-left: 5px solid #FFC24B;
+        font-family: Century Gothic;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: left;
+        color: #646469;
+        margin: 14px 0px 20px 0px;
+        padding: 0px 0px 0px 12px;
+    }
+    .main__article {
+        display: flex;
+        margin: 32px 0px 0px 0px;
+    }
+    .article-left img{
+        width: 110px;
+        height: auto;
+    }
+    .article-right a {
+        font-family: Century Gothic;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22.07px;
+        text-align: left;
+        color: #393333;
+    }
+    .main__text8-title {
+        font-family: RadiateSans-BoldSemiExpanded;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 51.39px;
+        letter-spacing: 0.14em;
+        text-align: left;
+        color: #FFC24B;
+        margin: 25px 0px 0px 0px;
+    }
+    .main__text8-list {
+        font-size: 12px;
+    }
+    .main__table {
+        margin: 10px 0px 0px 0px;
+        width: 320px;
+        height: 455px;
+        border-collapse: collapse;
+    }
+    .main__table td:nth-child(1) {
+        font-family: Century Gothic;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 13.4px;
+        text-align: left;
+        color: #393333;
+        width: 435px;
+        padding: 0px 8px 0px 9px;
+    }
+    .main__table td:nth-child(2) {
+        font-family: Century Gothic;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 13.4px;
+        text-align: left;
+        color: #393333;
+        width: 435px;
+        padding: 0px 0px 0px 10px;
+    }
+    .main__self-promotion {
+        display: flex;
+        height: 440px;
+        width: 321px;
+        background-color: #393333;
+        margin: 20px 0px 0px 0px;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding: 20px 0px 0px 0px;
+    }
+    .main__text9-title {
+        margin: 15px 0px 0px 0px;
+    }
+    .main__text9-list {
+        margin: 16px 0px 0px 0px;
+    }
+    .main__text9 {
+        border-left: 5px solid #FFC24B;
+        font-family: Century Gothic;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: left;
+        color: #646469;
+        margin: 0px 0px 20px 0px;
+        padding: 0px 0px 0px 12px;
+    }
+    .main__text9-title span {
+        font-family: RadiateSans-BoldSemiExpanded;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 51.39px;
+        letter-spacing: 0.15em;
+        text-align: left;
+        color: #FFC24B;
+    }
+    .main__text9-list {
+        font-size: 12px;
+    }
+    .main__self-promotion2 {
+        display: flex;
+        height: 553px;
+        width: 320px;
+        background-color: #393333;
+        margin: 30px 0px 0px 0px;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .promotion2-left {
+        padding: 30px 0px 0px 0px;
+    }
+    .promotion2-right {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 0px 0px;
+    }
+    .main__text10-title {
+        margin: 15px 0px 0px 0px;
+    }
+    .main__text10-title span {
+        font-family: RadiateSans-BoldSemiExpanded;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 51.39px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #FFCF5C;
+    }
+    .main__questions {
+        margin: 0px 0px 0px 0px;
+    }
+    .main__question {
+        width: 277px;
+        height: 30px;
+        padding: 25px;
+        gap: 20px;
+    }
+    .main__sources-used {
+        margin: 20px 0px 39px 0px;
+        width: 258px;
+        height: 319px;
+        padding: 24px 30px 30px 30px;
+        gap: 20px;
+        border: 1px solid #CCCCCC;
+    }
+    .main__info-stats img {
+        width: 275px;
+        height: 25px;
+    }
+    .main__info-stats {
+        padding: 0px 0px 0px 20px;
+    }
+    .main__question-text {
+        font-family: Century Gothic;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: left;
+        color: #646469;
+        margin: 3px 0px 0px 0px;
+    }
+    .main__question-title {
+        display: flex;
+        font-family: Century Gothic;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 19.62px;
+        text-align: left;
+        color: #393333;
+        justify-content: space-between;
+    }
+    .promotion2__text {
+        border-left: 5px solid #FFC24B;
+        font-family: Century Gothic;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: left;
+        color: white;
+        margin: 0px 0px 11px 0px;
+        padding: 0px 15px 0px 15px;
+    }
+    .promotion2-right span {
+        font-family: TTFirs-ExtraBold;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25.2px;
+        text-align: left;
+        color: white;
+        padding: 15px;
+    }
+    .main__question-title img{
+        width: 7px;
+        height: 20px;
+    }
+    .main__text10-title{
+        display: none;
+    }
+    .main__questions{
+        display: none;
+    }
+
+    .main__comments-title {
+        font-family: TTFirs-Black;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 62.51px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #FFC24B;
+        margin: 20px 0px 0px 24px;
+    }
+    .main__call-comments {
+        font-family: TTFirs-ExtraBold;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 25.2px;
+        text-align: left;
+        color: #393333;
+        margin: 0px 0px 0px 25px;
+    }
+    .main__call-comments {
+        font-family: TTFirs-ExtraBold;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 25.2px;
+        text-align: left;
+        color: #393333;
+        margin: 0px 0px 0px 25px;
+    }
+    .form__input-name {
+        width: 300px;
+        height: 40px;
+        font-family: Century Gothic;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17.17px;
+        text-align: left;
+        color: #393333;
+        padding: 0px 0px 0px 20px;
+        border: 0px;
+    }
+    .form__input-comment {
+        width: 300px;
+        height: 70px;
+        font-family: Century Gothic;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17.17px;
+        text-align: left;
+        color: #393333;
+        padding: 0px 0px 0px 20px;
+        border: 0px;
+    }
+    .main__form {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0px 0px 30px;
+    }
+    .form__button {
+        width: 166px;
+        height: 36px;
+        padding: 10px 24px 10px 50px;
+        background-color: #FFCF5C;
+        font-family: Century Gothic;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 17.17px;
+        text-align: left;
+        border: 0px;
+        margin: 10px 0px 0px 0px;
+    }
+    .main__count-comments {
+        font-family: Century Gothic;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 25.2px;
+        text-align: left;
+        color: #393333;
+        margin: 26px 0px 0px 30px;
+    }
+    .comment__right {
+        margin: 0px 0px 0px 4px;
+    }
+    .main__comment {
+        display: flex;
+        width: 280px;
+        height: 195px;
+        padding: 15px 20px 15px 20px;
+        align-items: center;
+    }
+    .comment__text {
+        font-family: Century Gothic;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 19.4px;
+        text-align: left;
+        color: #393333;
+        width: 195px;
+    }
+    .main__articles-title {
+        font-family: TTFirs-Black;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 62.51px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #FFC24B;
+        margin: 0px 0px 0px 0px;
+    }
+    .articles__article {
+        display: flex;
+        flex-direction: column;
+        height: 330px;
+        width: 315px;
+        margin: 18px 0px 0px 0px;
+        align-items: center;
+    }
+    .articles__name {
+        font-family: Century Gothic;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 19.07px;
+        text-align: left;
+        color: #393333;
+    }
+    .articles__article img {
+        width: 80%;
+        height: 50%;
+    }
+    .articles__views {
+        display: none;
+        align-items: center;
+        margin: 10px 0px 0px 0px;
+    }
+    .articles__type {
+        font-family: Century Gothic;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17.17px;
+        text-align: left;
+        color: #393333;
+        border-radius: 40px;
+        width: 76px;
+        height: 19px;
+        padding: 5px 0px 4px 0px;
+        background: #FFCF5C;
+        text-align: center;
+    }
+    .main__articles {
+        display: grid;
+        grid-template-columns: 320px;
+        grid-template-rows: 310px 310px 310px 310px;
+        justify-items: center;
+        align-items: center;
+    }
+    .main_container {
+        width: 320px;
+    }
+
+    .main__about-us {
+        display: flex;
+        margin: 40px 0px 0px 0px;
+        width: 375px;
+    }
+    .about__us-title {
+        font-family: TTFirs-Black;
+        font-size: 29px;
+        line-height: 53.91px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #FFC24B;
+    }
+    .about__us-title-list {
+        font-family: TTFirs-ExtraBold;
+        font-size: 19px;
+        line-height: 25.78px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #FFC24B;
+        margin: 10px 0px 0px 0px;
+    }
+    .about__us-text {
+        font-family: Century Gothic;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: left;
+        color: #393333;
+        margin: 0px 0px 10px 0px;
+    }
+    .about__us-form {
+        font-family: Century Gothic;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17.17px;
+        text-align: left;
+        color: #393333;
+        display: flex;
+        flex-direction: column;
+        margin: 25px 0px 50px 0px;
+    }
+    .about__us-button {
+        font-family: Century Gothic;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17.17px;
+        text-align: left;
+        background-color: #393333;
+        color: white;
+        width: 250px;
+        height: 42px;
+        padding: 10px 59px 10px 57px;
+        margin: 20px 0px 0px 0px;
+        border: 0px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .header{
+        height: 460px;
+    }
+    .header__top {
+        display: flex;
+    }
+    .header__right-lang{
+        display: none;
+    }
+    .header__right-currency{
+        display: none;
+    }
+    .header__right-number-full{
+        display: none;
+    }
+    .header__right-soc{
+        display: none;
+    }
+    .header__left {
+        margin: 0px 25px 0px 0px;
+    }
+    .header__right {
+        margin: 0px 0px 0px 25px;
+    }
+
+    .title__author-name {
+        font-size: 12px;
+    }
+    .title__author-text {
+        font-size: 10px;
+    }
+    .title__info-dates {
+        font-size: 10px;
+    }
+    .title__author-photo img{
+        width: 100px;
+        height: 100px;
+    }
+    .title__info-stats img{
+        width: 300px;
+        height: 23px;
+    }
+    .info-tags-button {
+        font-size: 10px;
+        padding: 5px 10px 5px 10px;
+    }
+    .breadcrumbs-links {
+        font-size: 10px;
+    }
+    .breadcrumbs a:last-child {
+        font-size: 10px;
+    }
+    .breadcrumbs {
+        margin: 30px 0px 25px 0px;
+    }
+    .main {
+        display: flex;
+        padding: 0px 0px 0px 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__left {
+        width: 490px;
+    }
+    .main__text1 {
+        font-size: 17px;
+        margin: 0px 0px 15px 0px;
+    }
+    .main__text2-title {
+        font-size: 24px;
+        margin: 0px 0px 15px 0px;
+    }
+    .main__text2 {
+        font-size: 17px;
+    }
+    .main__right-content {
+        width: 300px;
+    }
+    .main__right-content span{
+        font-size: 16px;
+        margin: 0px 0px 0px 20px;
+    }
+    .right__content-list {
+        margin: 30px 0px 0px 20px;
+        
+    }
+    .right__content-links {
+        margin-bottom: 1.20em;
+        padding: 0px 0px 0px 10px;
+    }
+    .right__content-links a{
+        font-size: 14px;
+    }
+    .rating-title {
+        font-family: TTFirs-Black;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 62.51px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #FFC24B;
+    }
+    .rating__left {
+        width: 375px;
+        height: 301px;
+    }
+    .main__rating {
+        display: flex;
+        width: 375px;
+        margin: 0px 0px 0px 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .rating-text {
+        font-family: Century Gothic;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: left;
+        color: #393333;
+        margin: 20px 0px 0px 0px;
+    }
+    .rating__card:not(:nth-child(1)){
+        display: none;
+    }
+    .rating__right {
+        display: grid;
+        grid-template-columns: 345px;
+        grid-template-rows: 158px;
+        margin: 20px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .header{
+        height: 500px;
+    }
+    .header__left-decor{
+        display: none;
+
+    }
+    .header__left-list{
+        display: none;
+    }
+    .header__left {
+        margin: 0px 95px 0px 0px;
+    }
+    .header__right {
+        margin: 0px 0px 0px 95px;
+    }
+    .header__subheader{
+        display: none;
+    }
+    .header__title {
+        width: 335px;
+    }
+    .header__title-text {
+        padding: 0px 0px 0px 0px;
+    }
+    .header__title-text h1 {
+        font-family: TTFirs-Black;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 38.05px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        
+    }
+    .title__author-photo img {
+        width: 80px;
+        height: 80px;
+    }
+    .title__author-name {
+        font-family: TTFirs-Black;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 29.94px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: white;
+        height: 24px;
+        width: 180px;
+        padding: 8px 0px 7px 0px;
+    }
+    .title__author-text {
+        font-family: TTFirs-Black;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 9.62px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: white;
+        height: 43px;
+        width: 255px;
+    }
+    .title__author-photo {
+        margin: 0px 0px 0px -15px;
+    }
+    .title__info-dates{
+        display: flex;
+    }
+    .title__info-dates {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 5px 0px;
+
+    }
+    .header__title-info {
+        padding: 0px 0px 0px 0px;
+    }
+    .title__info-stats {
+        padding: 0px 0px 0px 0px;
+    }
+    .main__left {
+        width: 320px;
+    }
+    .main__text1 {
+        font-size: 14px;
+        margin: 0px 0px 10px 0px;
+    }
+    .main__text2-title {
+        font-size: 19px;
+        margin: 0px 0px 10px 0px;
+    }
+    .main__text2 {
+        font-size: 14px;
+    }
+    .main__right-contactus{
+        display: none;
+    }
+    .main__right {
+        margin: 0px 0px 0px 0px;
+    }
+
+}
+
+
+
+
+ 
+@media(min-width: 991px) {
+    .footer__link>a:hover {
+       color: #FFC24B;
+    }
+ }
+ 
+ 
+ .footer__center {
+    flex: 0 1 330px;
+ }
+ 
+ .footer__title {
+    font-family: TTFirs-Bold;
+    font-size: calc(18px + (24 - 18) * ((100vw - 375px) / (1920 - 375)));
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #FFCF5C;
+    margin-bottom: 10px;
+    display: block;
+ }
+ 
+ .footer__list {
+    margin-bottom: 40px;
+ }
+ 
+ .footer__list li {
+    margin: 0;
+ }
+ 
+ .footer__list a {
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: calc(14px + (20 - 14) * ((100vw - 375px) / (1920 - 375)));
+    line-height: calc(17px + (25 - 17) * ((100vw - 375px) / (1920 - 375)));
+    color: #FFFFFF;
+    display: block;
+    margin-bottom: 6px;
+ }
+ 
+ .footer__right {
+    flex: 0 1 330px;
+    width: 100%;
+ }
+ 
+ @media(max-width: 1260px) {
+    .footer__left {
+       flex: 0 1 100%;
+       max-width: 100%;
+       margin-bottom: 20px;
+    }
+ 
+    .footer__right {
+       flex: 0 1 50%;
+    }
+ 
+    .footer__center {
+       flex: 0 1 50%;
+    }
+ }
+ 
+ @media(max-width: 778px) {
+    .footer__left {
+       flex: 0 1 100%;
+       max-width: 100%;
+       margin-bottom: 20px;
+    }
+ 
+    .footer__right {
+       flex: 0 1 100%;
+    }
+ 
+    .footer__center {
+       flex: 0 1 100%;
+    }
+ 
+    .footer__container {
+       align-items: flex-start;
+       flex-direction: column;
+    }
+ 
+    .footer__social {
+       margin: 0 auto;
+    }
+ 
+    .footer__img {
+       margin: 0 auto;
+       margin-top: 30px;
+       text-align: center;
+       display: block;
+    }
+ }
+
+
+/*АДАПТАЦИЯ ЭКРАНА*/
+
